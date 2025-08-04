@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>esCrawl - Coming Soon</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo"><span class="elogo">e</span>sCrawl</div>
+    <button class="scroll-button" onclick="scrollToSection()">Say Hello</button>
+  </header>
+
+  <section class="hero-section">
+    <p class="hero-text">Something great is on the way</p>
+    <h1 class="main-heading">COMING SOON</h1>
+    <div class="countdown">
+      <div><span id="days">00</span><small>Days</small></div>
+      <div><span id="hours">00</span><small>Hours</small></div>
+      <div><span id="minutes">00</span><small>Mins.</small></div>
+      <div><span id="seconds">00</span><small>Secs.</small></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2 style="color: #ffffff;">Are you ready?</h2>
+    <p class="paragraph">
+      At esCrawl, we believe every great product deserves a platform — especially those crafted by emerging startups and passionate local vendors. Our mission is to give these businesses the visibility, voice, and customer base they often struggle to find in crowded marketplaces. We offer not just a storefront, but a supportive ecosystem — complete with free marketing, brand-building tools, and community-led growth. For customers, esCrawl is a space to discover purpose-driven, high-quality products rooted in authenticity, innovation, and culture. Every purchase here supports a dream, a story, and a local business working to make a mark.
+    </p>
+
+    <img src="paper_plane.avif" alt="Paper Plane" class="icon" />
+
+    <p style="color: #aac6cf;" class="sub-text">Be the first to hear when we go live</p>
+
+    <form id="notify-form">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required />
+      <button type="submit">Notify Me</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column social">
+      <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+    </div>
+    <div class="footer-column contact">
+      <a href="mailto:info@escrawl.com">info@escrawl.com</a>
+    </div>
+    <div class="footer-column credits">
+      <p>© 2035 by WEHAVERYTHINGS. 
+         Powered and secured by <a href="https://escrawl.com">esCrawl</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Success Popup -->
+<div id="success-popup" class="popup hidden">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup('success-popup')">&times;</span>
+    <h3>✅ Email Sent Successfully!</h3>
+    <p>Thank you! We'll notify you when we launch.</p>
+  </div>
+</div>
+
+<!-- Error Popup -->
+<div id="error-popup" class="popup hidden">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup('error-popup')">&times;</span>
+    <h3>❌ Something went wrong!</h3>
+    <p>Please check your email or try again.</p>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
