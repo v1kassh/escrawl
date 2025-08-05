@@ -344,15 +344,6 @@ button[type="submit"]:hover {
     align-items: center;
   }
 
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-column {
-    align-items: center;
-  }
 
   .scroll-button {
     font-size: 16px;
@@ -386,4 +377,5 @@ button[type="submit"]:hover {
     font-size: 0.95rem;
   }
 }
+
 
